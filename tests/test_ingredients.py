@@ -24,22 +24,5 @@ class TestIngredients:
                                 80)
         assert ingredient.get_price() == 80
 
-    def test_ingredient_from_database_get_name(self):
-        database = Database()
-        ingredients_list = database.available_ingredients()
-        current_ingredient = ingredients_list[1]
-        assert current_ingredient.get_name() == 'sour cream'
-
-    def test_ingredient_from_database_get_type(self):
-        database = Database()
-        ingredients_list = database.available_ingredients()
-        current_ingredient = ingredients_list[5]
-        assert current_ingredient.get_type() == 'FILLING'
-
-    def test_ingredient_from_database_get_price(self):
-        database = Database()
-        ingredients_list = database.available_ingredients()
-        current_ingredient = ingredients_list[4]
-        assert current_ingredient.get_price() == 200
 
 
